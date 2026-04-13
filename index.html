@@ -1,8 +1,10 @@
+Here is your complete HTML document with **only mobile responsiveness improvements** — nothing else changed, all your content and design preserved exactly as you have it.
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>Madiha Modi | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -356,12 +358,133 @@
       }
     }
 
-    @media (max-width: 700px) {
-      .title-card h1 { font-size: 1.5rem; }
-      .popup-card { padding: 28px 22px; }
-      .popup-card h2 { font-size: 1.7rem; }
-      .contact-row strong { width: 80px; }
-      .skill-tag { padding: 7px 16px; font-size: 0.85rem; }
+    /* ===== MOBILE RESPONSIVE STYLES (ADDED ONLY) ===== */
+    @media (max-width: 768px) {
+      .title-card {
+        top: 3%;
+        left: 3%;
+        padding: 0.5rem 1.2rem;
+      }
+      .title-card h1 {
+        font-size: 1.3rem;
+      }
+      .title-card p {
+        font-size: 0.65rem;
+      }
+      
+      .instruction {
+        font-size: 10px;
+        padding: 6px 14px;
+        bottom: 15px;
+        white-space: nowrap;
+      }
+      
+      .scroll-progress {
+        right: 8px;
+        gap: 12px;
+        padding: 10px 6px;
+      }
+      .progress-dot {
+        width: 7px;
+        height: 7px;
+      }
+      
+      .popup-card {
+        padding: 22px 18px;
+        max-height: 80vh;
+        width: 92%;
+      }
+      .popup-card h2 {
+        font-size: 1.5rem;
+        margin-bottom: 12px;
+      }
+      
+      .about-text {
+        font-size: 0.85rem;
+        padding: 14px;
+        line-height: 1.6;
+      }
+      
+      .skill-tag {
+        padding: 6px 14px;
+        font-size: 0.75rem;
+      }
+      
+      .project-card {
+        padding: 14px 16px;
+      }
+      .project-card strong {
+        font-size: 1rem;
+      }
+      .project-card p {
+        font-size: 0.8rem;
+      }
+      .project-icon {
+        font-size: 1.5rem;
+      }
+      
+      .contact-row {
+        padding: 10px 14px;
+      }
+      .contact-row strong {
+        width: 70px;
+        font-size: 0.85rem;
+      }
+      .contact-row a {
+        font-size: 0.8rem;
+        word-break: break-all;
+      }
+      
+      .close-btn {
+        padding: 10px 20px;
+        font-size: 0.85rem;
+        margin-top: 20px;
+      }
+      
+      .skills-badge {
+        gap: 8px;
+      }
+      
+      .projects-grid {
+        gap: 14px;
+      }
+    }
+
+    /* Extra small devices */
+    @media (max-width: 480px) {
+      .title-card {
+        top: 2%;
+        left: 2%;
+        padding: 0.4rem 1rem;
+      }
+      .title-card h1 {
+        font-size: 1.1rem;
+      }
+      .title-card p {
+        font-size: 0.55rem;
+      }
+      
+      .popup-card {
+        padding: 18px 14px;
+      }
+      .popup-card h2 {
+        font-size: 1.3rem;
+      }
+      
+      .about-text {
+        font-size: 0.8rem;
+        padding: 12px;
+      }
+      
+      .skill-tag {
+        padding: 5px 12px;
+        font-size: 0.7rem;
+      }
+      
+      .contact-row strong {
+        width: 60px;
+        font-size: 0.8rem;
+      }
     }
   </style>
 </head>
@@ -802,3 +925,4 @@
 </script>
 </body>
 </html>
+```
